@@ -256,7 +256,8 @@ async def process_bet(query, context, mid, choice, stars_amount):
         current_balance = row[0] if row else 0
 
         if current_balance < stars_amount:
-        conn.rollback()
+        if current_balance < stars_amount:
+            conn.rollback()
             needed = stars_amount - current_balance
             # فتح نافذة شراء النجوم مباشرة
             await query.message.reply_text(
