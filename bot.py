@@ -8,7 +8,7 @@ from telegram.ext import (
 )
 
 # ================= CONFIG =================
-TOKEN = os.environ.get("BOT_TOKEN","8623730183:AAGRLAcLVYueH-bQJffByXLdVHHNEFMzhqE")
+TOKEN = os.environ.get("BOT_TOKEN", "8623730183:AAGRLAcLVYueH-bQJffByXLdVHHNEFMzhqE")
 ADMIN_ID = 5917466750
 DB_NAME = "bot.db"
 STAR_VALUE_USD = 0.0234       # قيمة النجمة الواحدة بالدولار
